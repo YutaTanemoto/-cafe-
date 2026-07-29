@@ -1,0 +1,228 @@
+.title {
+    height: 310px;
+    background-image: url(../images/concept/title_concept.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+.title h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 14pt;
+    margin-top: 15px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+}
+
+.feature-text {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .feature-text {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.feature-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.feature-text h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.feature-text p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+.movie {
+    width: 930px;
+    max-width: 90%;
+    background-color: #f8f8f8;
+    padding: 50px 60px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.movie h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    margin-top: 30px;
+}
+
+.movie p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+.member-list li {
+    width: 220px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    background-color: #fdfdfd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+.member-list li.boy dt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF; /* 青色 */
+    border-radius: 2px;
+}
+
+.member-list li.girl dt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f36; /* 青色 */
+    border-radius: 2px;
+}
+
+.member-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.member-list {
+    margin-top: 5px;
+}
+
+.member-list dt {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.member-list dd {
+    margin-left: 1em;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+    .member-list {
+    flex-direction: column;
+    }
+
+    .member-list li {
+        max-width: 100%;
+    }
+}
+
+.price-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto;
+    font-size: 16px;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    text-align: center;
+    color: #4b2c14;
+    font-family: "Cherry Bomb One", cursive;
+}
+
+.price-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+.price-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #4b2c14;
+    font-family: "Cherry Bomb One", cursive;
+}
